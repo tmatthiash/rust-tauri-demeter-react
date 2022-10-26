@@ -7,5 +7,8 @@
 }
 
 #buffer-msg {
-  white-space: pre-line;
+  white-space: pre;
+  font-family: "Mono";
+  line-height: 100%;
+  font-size: 14px;
 }

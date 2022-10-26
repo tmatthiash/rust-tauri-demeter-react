@@ -56,7 +56,7 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 850,
         "resizable": true,
         "title": "RustDemeter",
         "width": 800

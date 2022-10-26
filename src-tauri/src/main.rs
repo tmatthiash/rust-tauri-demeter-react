@@ -19,9 +19,11 @@ fn greet(name: &str) -> String {
 fn main() {
     // listen();
     println!("UP");
+
     tauri::Builder::default()
         .setup(|app| {
-            listen(app.get_window("main").unwrap());
+            let main_window = app.get_window("main").unwrap();
+            listen(main_window);
             Ok(())
         })
         .invoke_handler(tauri::generate_handler![greet])
